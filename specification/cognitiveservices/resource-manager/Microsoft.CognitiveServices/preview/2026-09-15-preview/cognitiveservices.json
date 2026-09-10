@@ -22395,6 +22395,16 @@
       "type": "object",
       "description": "The usage data for a usage request.",
       "properties": {
+        "id": {
+          "type": "string",
+          "description": "Fully qualified resource ID for the usage.",
+          "readOnly": true
+        },
+        "type": {
+          "type": "string",
+          "description": "The resource type.",
+          "readOnly": true
+        },
         "unit": {
           "$ref": "#/definitions/UnitType",
           "description": "The unit of the metric."

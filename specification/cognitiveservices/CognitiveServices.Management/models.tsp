@@ -2784,6 +2784,20 @@ model UsageListResult {
  */
 model Usage {
   /**
+   * Fully qualified resource ID for the usage.
+   */
+  @added(Versions.v2026_09_15_preview)
+  @visibility(Lifecycle.Read)
+  id?: string;
+
+  /**
+   * The resource type.
+   */
+  @added(Versions.v2026_09_15_preview)
+  @visibility(Lifecycle.Read)
+  type?: string;
+
+  /**
    * The unit of the metric.
    */
   unit?: UnitType;
